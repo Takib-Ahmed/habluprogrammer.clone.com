@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html style="background-color: #0f1729; ;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon1.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon1-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" hr
+ef="/favicon1-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<script src="script.js"></script>
+  <title>
+    Hablu Programmmer.com
+  </title>
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  background: bg;
+  color: whitesmoke;
+  display:contents;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0;
+  padding: 4rem;
+  width: 100%;
+  color: aliceblue;
+}
+
+.accordion {
+  .accordion-item {
+    border-bottom: 1px solid lightgray;
+    button[aria-expanded='true'] {
+      border-bottom: 1px solid #ffff;
+      color: aliceblue;
+    }
+  }
+  button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: text;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+    &:hover, &:focus {
+      cursor: pointer;
+      color: #fff;
+      &::after {
+        cursor: pointer;
+        color: #ffff;
+        border: 1px solid #ffff;
+      }
+    }
+    .accordion-title {
+      padding: 1em 1.5em 1em 0;
+      color: aliceblue;
+    }
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      right: 0;
+
+      width: 22px;
+      height: 22px;
+      border: 1px solid;
+      border-radius: 22px;
+      &::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+      }
+    }
+  }
+  button[aria-expanded='true'] {
+
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    .accordion-content {
+      opacity: 1;
+      max-height: 9em;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+    }
+  }
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      margin:  0;
+    }
+  }
+}
+
+
+</style>
+  <header>
+    <nav  style="margin-left: 5%;">  <a href="habluprogrammer.html"><img src="logoOne.webp" alt="" id="img"></a>
+      <div style="margin-right: 5%;">
+        <ul>
+          <li><a href="index.html" class="activ">Home</a></li>
+          <li><a href="courses.html" class="activ">Courses</a></li>
+          <li><a href="hpprivacypolicy.html" class="activ">Privacy Policy</a></li>
+          <li><a href="#" class="activ">FAQ</a></li>
+          <li><a href="hplog.html" class="activ"id="account" ><span class="material-symbols-outlined">
+            account_circle
+            </span></a></li>  
+          <li>
+            <div class="dropdown"><button type="menu" class="menu" style="cursor: pointer;  "><span class="material-symbols-outlined">
+              more_horiz
+              </span></button>
+              <div class="drop_content">
+                <a href="#">Home</a><br>
+                <a href="courses.html">Courses</a><br>
+                <a href="hpprivacypolicy.html">Privacy Policy</a><br>
+                <a href="#">FAQ</a>
+                <br>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+  </header>
+ <br><br><br><br><br><hr style="margin-left:4%;margin-right:4% ;">
+  </head>
+  <body style="margin:5% 5%;">
+    
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-button" id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How Can I Get The Course Videos?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Course Videos Will Be Pre-Recorded & Weekly Live Session. You Have To Create An Account And Register For This Course. From The Beginning, Videos Will Be Distributed In One Chapter Every Day. Each Chapter Typically Has 3 To 8 Videos. You Must Watch These Videos Within 24 Hours Of Our Release.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button  class="accordion-button" id="accordion-button-2" aria-expanded="false"><span class="accordion-title">How Much Time Will Take To Finish The Course?
+
+            </span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>If You Watch Tutorials For 1 To 2 Hours And Practice Those For 4 To 6 Hours, It Will Take 4 Months To Complete The Course. You Must Have A Hard Working Mentality For Enrolling In This Course.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button  class="accordion-button" id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever discover aliens?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button  class="accordion-button" id="accordion-button-4" aria-expanded="false"><span class="accordion-title">What I Will Learn From This Course?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>You Will Learn Everything Needed To Become A Junior Frontend Web Developer. Begin From HTML, CSS, Vs Code, Git & GitHub, Bootstrap, Sass, Javascript, ES6, Chrome Dev Tools, REST API, JSON, DOM, BOM, Web API. Not Only That, You Will Also Learn The Most Famous JavaScript Library & Framework React JS & Next JS. Also You Will Learn Most Popupler Programming Language TypeScript & Some Animation Library. After Finishing This Course You Will Get Special Guideline Session For Job Interview Preparation & Freelancing Guide.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-button"  id="accordion-button-5" aria-expanded="false"><span class="accordion-title">For whom is this course?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>This Course Is For Those People Who Want To Learn Front-End Web Development From Beginner Level To Advance Level With Quiz And Projects Also With Live Supports.</p>
+            </div>
+          </div>
+        </div>
+      </div><br><hr style="margin-left:4%;margin-right:4% ;">
+       <footer class=".footer"> 
+    <section class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul class="links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refumd Policy</a></li>
+            <li><a href="#">FAQ</a></li>
+
+
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="links">
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Success Story</a></li>
+            <li><a href="#">My Account</a></li>
+
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Social Links</h4>
+          <ul class="links">
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">github</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <ul>
+            <h4>Contact Info</h4>
+            <li>Call Us: +880 1816986263</li>
+            <li>Address: Dhaka,Bangladesh.</li>
+            <li>Mail Us: support@hablu-programmer.com</li>
+          </ul>
+
+
+        </div>
+      </div>
+      </div>
+      Copyright © 2024 Hablu-Programmer | All Rights Reserved
+    </section>
+  </footer> 
+  </body>
+ 
+
+  </html>
