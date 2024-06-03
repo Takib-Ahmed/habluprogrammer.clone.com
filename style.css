@@ -895,7 +895,7 @@ margin: 2% 25%;
   margin:0!important;
 }
   .reviews{display:grid!important;
-           div{display:grid;}}
+           }
 }
 
 
